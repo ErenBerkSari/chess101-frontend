@@ -41,17 +41,20 @@ function Auth() {
     setLoading(true);
     const path = mode === "register" ? "signup" : "signin";
     try {
-      const res = await fetch("auth/" + path, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-          password: password,
-          username: mode === "register" ? username : undefined,
-        }),
-      });
+      const res = await fetch(
+        "https://chess101-backend-2f0cbcbcfdef.herokuapp.com/auth/" + path,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            password: password,
+            username: mode === "register" ? username : undefined,
+          }),
+        }
+      );
 
       const result = await res.json();
       setLoading(false);
