@@ -1,0 +1,19 @@
+.user-progress-container {
+  display: flex;
+  align-items: center;
+  height: 100%; /* Yüksekliği %100 yaparak dikeyde ortalama */
+}
+
+.progress-text {
+  margin-right: 10px;
+  line-height: 1; /* Progress bar ile hizalama */
+}
+
+.progress-bar {
+  width: 100px;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}

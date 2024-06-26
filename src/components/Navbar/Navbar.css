@@ -1,0 +1,93 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 0;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-logo a {
+  color: #a1da60;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  color: #8bc34a;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 15px;
+  margin-left: auto; /* Links'leri sağa hizalar */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #a1da60;
+  bottom: -3px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::before {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: #a1da60;
+}
+
+.navbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  margin-left: auto; /* Kullanıcı öğelerini sağa hizalar */
+}
+
+.user-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#logout {
+  background-color: #8bc34a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#logout:hover {
+  background-color: #7cb342;
+  transform: translateY(-2px);
+}
+
+#logout:active {
+  background-color: #689f38;
+  transform: translateY(0);
+}

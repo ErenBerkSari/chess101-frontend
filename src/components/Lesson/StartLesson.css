@@ -1,0 +1,78 @@
+.lesson-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light grey background */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+  max-width: 800px; /* Maximum width */
+  margin: 20px auto; /* Center horizontally */
+  text-align: center; /* Center text */
+}
+
+.lesson-detail h4 {
+  color: #388e3c; /* Dark green title */
+}
+
+.lesson-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-description {
+  margin-bottom: 20px;
+}
+
+.lesson-section {
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left; /* Align text to the left */
+}
+
+.lesson-section-image {
+  text-align: center; /* Center image within section */
+}
+
+.lesson-section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-section-video {
+  text-align: center; /* Center video within section */
+}
+
+.lesson-section-video iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin: 10px;
+  background-color: #4caf50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px);
+}

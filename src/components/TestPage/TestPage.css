@@ -1,0 +1,28 @@
+.correct {
+  background-color: #e8f5e9; /* Light green for correct answers */
+}
+
+.incorrect {
+  background-color: #ffcdd2; /* Light red for incorrect answers */
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+}
+
+.test-message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.test-progress-bar {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.confetti-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Taşmaları önlemek için overflow ayarlandı */
+}

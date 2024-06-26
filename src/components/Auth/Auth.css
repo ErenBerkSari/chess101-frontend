@@ -1,0 +1,79 @@
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.auth-title {
+  margin-bottom: 20px;
+  color: #388e3c;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+
+.auth-card {
+  width: 400px;
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9); /* Hafif saydam beyaz arka plan */
+}
+
+.auth-form {
+  margin-top: 15px; /* Marginleri azaltın */
+  width: 100%;
+}
+
+.auth-button {
+  margin-top: 15px; /* Marginleri azaltın */
+  width: 100%;
+  padding: 10px;
+  background-color: #388e3c; /* Yeşil renk */
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Geçiş efektleri ekleyin */
+}
+
+.auth-button:hover {
+  background-color: #2e7d32; /* Koyu yeşil */
+  transform: translateY(-2px); /* Hover durumunda butonu yukarı kaydırın */
+}
+
+.MuiInputBase-root {
+  width: 100%;
+}
+
+.MuiFormHelperText-root {
+  text-align: center;
+}
+
+/* Ek CSS düzenlemeleri */
+.MuiInputBase-input {
+  background-color: #e3f2fd; /* Hafif mavi arka plan */
+  padding: 10px; /* İç boşluk */
+  border-radius: 4px; /* Köşeleri yuvarlat */
+}
+
+.MuiFormControl-root {
+  margin-top: 10px; /* Üst boşlukları azaltın */
+}
+
+.MuiTypography-root {
+  margin-top: 10px; /* Üst boşlukları azaltın */
+}
+
+.MuiSelect-root {
+  background-color: #e3f2fd; /* Hafif mavi arka plan */
+  padding: 10px; /* İç boşluk */
+  border-radius: 4px; /* Köşeleri yuvarlat */
+}
+
+.auth-form + .auth-form {
+  margin-top: 10px; /* Form alanları arasına boşluk ekleyin */
+}

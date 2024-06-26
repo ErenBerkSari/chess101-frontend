@@ -1,0 +1,27 @@
+.lesson {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #e8f5e9; /* Light green background */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.lesson .MuiButton-root {
+  background-color: transparent; /* Arka planı kaldır */
+  border: none; /* Çerçeveyi kaldır */
+  border-radius: 5px;
+  color: #007bff;
+  padding: 5px 10px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.lesson .MuiButton-root:hover {
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+.lesson .MuiButton-root:active {
+  background-color: transparent;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Stronger glow effect */
+}

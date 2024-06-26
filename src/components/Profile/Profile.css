@@ -1,0 +1,47 @@
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5; /* Light green background */
+}
+
+.left-container {
+  width: 48%;
+}
+
+.right-container {
+  margin-left: 20px;
+  width: 48%;
+}
+
+.user-info-card,
+.user-lessons,
+.user-progress-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.print-button {
+  margin-top: 20px;
+  visibility: hidden;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.doughnut-chart {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,75 @@
+#lesson-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5; /* Light grey background */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge ekledim */
+  max-width: 800px; /* Maksimum genişlik ayarladım */
+  margin: 0px auto; /* Ortalamak için otomatik marjin */
+}
+
+#lesson-detail-container h1,
+#lesson-detail-container p {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.not-found {
+  color: gray;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.lesson-image {
+  width: 100%; /* Resmi konteynerin genişliğine ayarladım */
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px; /* Hafif köşeleri yuvarlattım */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge ekledim */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row; /* Butonları yatay hizaladım */
+  gap: 10px; /* Butonlar arasında boşluk ekledim */
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Köşeleri yuvarlattım */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hafif gölge ekledim */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #388e3c; /* Hover durumunda daha koyu yeşil */
+  transform: translateY(-2px);
+}
+
+.buttons button:disabled {
+  background-color: #9e9e9e; /* Disable durumunda gri renk */
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column; /* Ekran daraldığında butonları dikey hizalar */
+  }
+}
