@@ -41,7 +41,7 @@ function Auth() {
     setLoading(true);
     const path = mode === "register" ? "signup" : "signin";
     try {
-      const res = await fetch("/auth/" + path, {
+      const res = await fetch("auth/" + path, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
